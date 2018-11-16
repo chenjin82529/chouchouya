@@ -1,0 +1,145 @@
+{
+  "loginId":"string(16),tab:01,searchable:true,unique:true;用户Id",
+  "wechat_openId": "string(16),tab:02;openId",
+  "wechat": "url,tab:03,searchable:true,hidden:true;;微信号",
+  "passwordhash":"password,tab:03,searchable:false,hidden:true;密码",
+  "random":"string(64),tab:03,searchable:false,hidden:true;密码",
+  "wechat_nickName": "string(16),tab:04,disabled:true;昵称",
+  "name": "string(16),tab:05,searchable:true,disabled:true;姓名",
+  "gender":"choice,values:0_未知/1_男/2_女,tab:06,searchable:true,hidden:false;性别",
+  "wechat_icon": "string(16),tab:07,disabled:true;微信头像",
+  "wechat_province": "string(16),tab:08,disabled:true;省份",
+  "wechat_city": "string(16),tab:09,disabled:true;城市",
+  "isEnable":"choice,values:y_是/n_否,tab:10,searchable:true,hidden:false;异常用户",
+  "staminaPoint": "decimal(10,1),tab:11,searchable:false;体力值",
+  "luckyPoint":"decimal(10,3),tab:12,searchable:false;运气值",
+  "score":"number(10),tab:13,searchable:true;积分",
+  "level":"string(10),tab:14,searchable:true,disabled:true;等级",
+  "isVip":"choice,values:y_是/n_否,tab:15,searchable:true,hidden:false,disabled:true;是否VIP",
+  "rechargeAccount":"number(10),tab:16,searchable:true,disabled:true;充值账户银币数",
+  "luckyAccount":"number(10),tab:17,searchable:false,disabled:true;幸运账户银币数",
+  "lotteryNum":"number(10),tab:18,searchable:false,disabled:true; 参与抽奖次数",
+  "winNum":"number(10),tab:19,searchable:false,disabled:true; 获奖次数",
+  "createTime": "date,tab:20,searchable:false,hidden:true,disabled:true;注册时间",
+  "lastLoginTime": "date,tab:21,disabled:true,searchable:true,hidden:true,disabled:true;最后登陆时间",
+  "redPacketInfo": [
+    {
+	 "#meta":{
+      "fieldLabel":"红包列表",
+      "tab":"user_red",
+	  "position": "card"
+    },
+	  "redPacketId":"number(10),disabled:true,tab:user_red1,hidden:true;红包id",
+	  "type":"string(10),disabled:true,tab:user_red2;红包类型",
+	  "redPacketNum":"number(10),disabled:true,tab:user_red3;红包数量"
+    }
+  ],
+  "oilInfo": [
+    {
+	 "#meta":{
+      "fieldLabel":"加油包列表",
+      "tab":"user_oil",
+	  "position": "card"
+    },
+	  "oilId":"number(10),disabled:true,tab:user_oil1,hidden:true;加油包id",
+	  "oilName":"string(10),disabled:true,tab:user_oil2;加油包名称",
+	  "oilNum":"number(10),disabled:true,tab:user_oil3;加油包数量"
+    }
+  ],
+  "lotteryInfo": [
+    {
+	 "#meta":{
+      "fieldLabel":"参与抽奖列表",
+      "tab":"user_lottery",
+	  "position": "card"
+    },
+	  "lotteryLogId":"number(10),disabled:true,tab:01;抽奖活动id",
+	  "joinTime": "date,tab:02,disabled:true,searchable:false;参与时间",
+	  "outTime": "date,tab:03,disabled:true,searchable:false;被踢出时间",
+	  "endTime": "date,tab:04,disabled:true,searchable:false;报名结束时间",
+	  "openTime": "date,tab:05,disabled:true,searchable:false;开奖时间",
+      "status": "string(10),tab:06,disabled:true,searchable:true;活动状态"
+    }
+  ],
+  "prizeInfo": [
+    {
+	 "#meta":{
+      "fieldLabel":"获奖列表",
+      "tab":"user_prize",
+	  "position": "card"
+    },
+	  "lotteryLogId":"number(10),disabled:true,tab:01;抽奖活动id",
+	  "joinTime": "date,tab:02,disabled:true;奖品id",
+	  "openTime": "date,tab:03,disabled:true;开奖时间",
+	  "status": "string(10),tab:04,hidden:true;状态"
+    }
+  ],
+  "honerInfo": [
+    {
+	 "#meta":{
+      "fieldLabel":"勋章列表",
+      "tab":"user_honer",
+	  "position": "card"
+    },
+	  "honerId":"string(16),tab:01,disabled:true;勋章Id",
+	  "name":"string(16),tab:02,disabled:true;勋章名称",
+	  "getTime": "date,tab:03,disabled:true;获取时间",
+	  "nth":"number(10),tab:04,disabled:true;第几个获取"
+    }
+  ],
+  "friendsInfo": 
+    {
+	 "#meta":{
+      "fieldLabel":"好友列表",
+      "tab":"user_friends"
+    },
+      "likes":"number(10),tab:02,disabled:true,listSize:8;点赞数量",
+	  "friendsList": [
+	    {
+		  "#meta":{
+		  "fieldLabel":"好友列表",
+		  "tab":"02",
+		  "position": "card"
+		},
+		"id":"number(10),tab:0201,listSize:6;序号",
+		"userId":"string(16),tab:0202,listSize:12;好友id"
+		}
+	  ],
+      "friendsNum":"number(10),tab:03,disabled:true,listSize:8;好友数量",
+      "addOilNum":"number(10),tab:04,disabled:true,listSize:12;给好友加油数量",
+      "getOilNum":"number(10),tab:05,disabled:true,listSize:12;好友给我加油数量"
+    },
+  
+  "oplogInfo": [
+    {
+	 "#meta":{
+      "fieldLabel":"用户行为日志",
+      "tab":"user_oplog"
+    },
+	  "lastLoginTime": "date,tab:01,disabled:true,disabled:true;日期时间",
+	  "page":"string(16),tab:02,disabled:true;页面",
+	  "pageOperation":"string(16),tab:03,disabled:true;页面操作"
+    }
+  ],
+  "_t":"user",
+  "#meta":{
+    "rem":"用户管理",
+    "parent":["platform"],
+    "visitType": [
+      "platform"
+    ],
+    "projectName":"用户管理",
+	"pos": 3,
+    "export":[
+      {
+        "label":"导出完整",
+        "mainTitleFormat":{"background":"#474747","color":"#cccccc"},
+        "subTitleFormat":{"background":"#777777","color":"#ffffff"},
+        "subRecordFormat":{"background":"#ffffff","color":"#000000"},
+        "mainRecordFormat":{"background":"#555555","color":"#FFFFFF"},
+        "key":"completeDoc",
+        "fields":["*"]
+      }
+    ]
+  }
+}

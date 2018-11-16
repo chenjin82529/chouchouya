@@ -1,0 +1,31 @@
+{
+  "honerId":"string(16),tab:01,searchable:true,unique:true,listSize:12,hidden:true;勋章Id",
+  "name":"string(16),tab:02,searchable:true,listSize:8;勋章名称",
+  "name":"string(75),tab:02,searchable:true,listSize:25;寄语",
+  "type":"string(16),tab:03,searchable:true,listSize:8;勋章类型",
+  "total":"number(10),tab:04,searchable:false,listSize:12;总数量",
+  "remaining":"number(10),tab:05,searchable:false,listSize:12;剩余数量",
+  "honerImages":"image,spec:350x350,size:2M,exts:png#jpg#gif#jpeg,,tab:06,searchable:false;图片",
+  "_t":"honer",
+  "#meta":{
+    "rem":"勋章管理",
+    "parent":["platform"],
+    "visitType": [
+      "platform"
+    ],
+    "projectName":"勋章管理",
+	"pos": 11,
+    "export":[
+      {
+        "label":"导出完整",
+        "mainTitleFormat":{"background":"#474747","color":"#cccccc"},
+        "subTitleFormat":{"background":"#777777","color":"#ffffff"},
+        "subRecordFormat":{"background":"#ffffff","color":"#000000"},
+        "mainRecordFormat":{"background":"#555555","color":"#FFFFFF"},
+        "key":"completeDoc",
+        "fields":["*"]
+      }
+    ]
+  }
+}
+

@@ -1,0 +1,41 @@
+{
+  "id":"string(16),tab:01,searchable:true,unique:true;样本Id",
+  "prizeId":"string(16),tab:02,searchable:true,hidden:true;奖品Id",
+  "prizeName": "string(16),tab:04,searchable:true;奖品名称",
+  "isVirtual":"choice,values:y_是/n_否,tab:03,searchable:false,hidden:false;是否虚拟物品",
+  "status": "string(10),tab:05,disabled:true,searchable:true;状态",
+  "userId": "string(16),tab:17,searchable:tree;中奖用户id",
+  "userLocal": "string(16),tab:17,searchable:tree;用户位置",
+  "startTime": "date,tab:13,disabled:true,searchable:false;报名开始时间",
+  "endTime": "date,tab:14,disabled:true,searchable:false;报名结束时间",
+  "address":"string(24),tab:19;配送地址",
+  "deliverStatus":"string(24),tab:20;物流状态",
+  "deliverMsg":"string(24),tab:21;物流信息",
+  "_t":"lotteryForNewLog",
+  "#meta":{
+    "rem":"新手专区活动列表",
+    "parent":["platform"],
+    "visitType": [
+      "platform"
+    ],
+    "projectName":"新手专区活动列表",
+	"pos": 6,
+	"group": {
+      "id": "lotteryData",
+      "name": "抽奖活动管理",
+      "pos": 3
+    },
+    "export":[
+      {
+        "label":"导出完整",
+        "mainTitleFormat":{"background":"#474747","color":"#cccccc"},
+        "subTitleFormat":{"background":"#777777","color":"#ffffff"},
+        "subRecordFormat":{"background":"#ffffff","color":"#000000"},
+        "mainRecordFormat":{"background":"#555555","color":"#FFFFFF"},
+        "key":"completeDoc",
+        "fields":["*"]
+      }
+    ]
+  }
+}
+

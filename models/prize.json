@@ -1,0 +1,42 @@
+{
+  "prizeId":"string(16),tab:01,searchable:true,unique:true;奖品Id",
+  "prizeName": "string(16),tab:02,searchable:true;奖品名称",
+  "prizeTitle":"string(50),tab:03,searchable:true;抽奖活动主题",
+  "themeImages":"image,spec:900x560,size:4M,exts:png#jpg#gif#jpeg,tab:04,searchable:false;活动主题图",
+  "prizeImages":"image,spec:100x100,size:4M,exts:png#jpg#gif#jpeg,tab:05,searchable:false;奖品缩略图",
+  "isVirtual":"choice,values:y_虚拟/n_实物,tab:06,searchable:true,hidden:false;虚拟/实物奖品",
+  "stock":"number(10),tab:07,searchable:false;库存数量",
+  "usedQuantity":"number(10),tab:07,searchable:false;用户领用数量",
+  "price":"number(8),tab:08,isMoney:true,searchable:false;奖品成本",
+  "activityLevel":"choice,values:0_0/1_1/2_2/3_3/4_4/5_5/6.6/7_7/8_8/VIP_VIP/,tab:08,searchable:true;抽奖活动等级",
+  "lowestLevel":"string(8),tab:08,searchable:true;用户最低等级",
+  "isDoate":"choice,values:y_是/n_否,tab:06,searchable:true,hidden:false;适合捐赠",
+  "isDeliver":"choice,values:y_是/n_否,tab:06,searchable:true,hidden:false;适合需要配送？",
+  "_t":"prize",
+  "#meta":{
+    "rem":"奖品列表",
+    "parent":["platform"],
+    "visitType": [
+      "platform"
+    ],
+    "projectName":"奖品列表",
+	"pos": 5,
+	"group": {
+      "id": "prizeData",
+      "name": "奖品管理",
+      "pos": 1
+    },
+    "export":[
+      {
+        "label":"导出完整",
+        "mainTitleFormat":{"background":"#474747","color":"#cccccc"},
+        "subTitleFormat":{"background":"#777777","color":"#ffffff"},
+        "subRecordFormat":{"background":"#ffffff","color":"#000000"},
+        "mainRecordFormat":{"background":"#555555","color":"#FFFFFF"},
+        "key":"completeDoc",
+        "fields":["*"]
+      }
+    ]
+  }
+}
+

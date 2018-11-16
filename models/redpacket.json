@@ -1,0 +1,30 @@
+{
+  "id":"string(16),tab:01,searchable:true,unique:true,hidden:true;红包id",
+  "occasion":"choice,values:0_手动/1_注册时自动/2_签到时自动,tab:01;派发时机",
+  "type":"choice,values:0_大吉大利/1_鸿运当头/2_2选1,tab:02;红包类型",
+  "coin":"number(10),tab:03;银币数范围",
+  "lucky":"number(10),tab:04;运气值范围",
+  "status":"string(10),tab:05,hidden:true;状态",
+  "_t":"redPacket",
+  "#meta":{
+    "rem":"红包管理",
+    "parent":["platform"],
+    "visitType": [
+      "platform"
+    ],
+    "projectName":"红包管理",
+	"pos": 9,
+    "export":[
+      {
+        "label":"导出完整",
+        "mainTitleFormat":{"background":"#474747","color":"#cccccc"},
+        "subTitleFormat":{"background":"#777777","color":"#ffffff"},
+        "subRecordFormat":{"background":"#ffffff","color":"#000000"},
+        "mainRecordFormat":{"background":"#555555","color":"#FFFFFF"},
+        "key":"completeDoc",
+        "fields":["*"]
+      }
+    ]
+  }
+}
+

@@ -1,0 +1,32 @@
+{
+  "robitId":"string(16),tab:01,searchable:false,unique:true;马甲Id",
+  "wechat_nickName": "string(16),tab:04,searchable:false;昵称",
+  "wechat_province": "string(16),tab:08,searchable:true;省份",
+  "wechat_city": "string(16),tab:09,searchable:true;城市",
+  "gender":"choice,values:0_未知/1_男/2_女,tab:06,searchable:false,hidden:false;性别",
+  "staminaPoint": "decimal(10,1),tab:11,searchable:false;体力值",
+  "luckyPoint":"decimal(10,3),tab:12,searchable:false;运气值",
+  "luckyAccount":"number(10),tab:17,searchable:false;幸运账户银币数",
+  "wechat_icon": "string(16),tab:07;微信头像",
+  "_t":"robit",
+  "#meta":{
+    "rem":"马甲管理",
+    "parent":["platform"],
+    "visitType": [
+      "platform"
+    ],
+    "projectName":"马甲管理",
+	"pos": 4,
+    "export":[
+      {
+        "label":"导出完整",
+        "mainTitleFormat":{"background":"#474747","color":"#cccccc"},
+        "subTitleFormat":{"background":"#777777","color":"#ffffff"},
+        "subRecordFormat":{"background":"#ffffff","color":"#000000"},
+        "mainRecordFormat":{"background":"#555555","color":"#FFFFFF"},
+        "key":"completeDoc",
+        "fields":["*"]
+      }
+    ]
+  }
+}

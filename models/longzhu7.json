@@ -1,0 +1,40 @@
+{
+  "prizeId":"string(16),tab:01,searchable:true,unique:true;奖品Id",
+  "prizeName": "string(16),tab:02,searchable:true;奖品名称",
+  "prizeName": "string(20),tab:03,searchable:false;加密序列号",
+  "isEnable":"choice,values:y_是/n_否,tab:04,searchable:true,hidden:false;已投入活动",
+  "prizeTitle":"string(50),tab:05,searchable:true;抽奖活动主题",
+  "themeImages":"image,spec:900x560,size:4M,exts:png#jpg#gif#jpeg,tab:06,searchable:false;活动主题图",
+  "prizeImages":"image,spec:100x100,size:2M,exts:png#jpg#gif#jpeg,tab:07,searchable:false;奖品缩略图",
+  "stock":"number(10),tab:08,searchable:false;库存数量",
+  "usedQuantity":"number(10),tab:09,searchable:false;用户领用数量",
+  "activityLevel":"choice,values:0_0/1_1/2_2/3_3/4_4/5_5/6.6/7_7/8_8/VIP_VIP/,tab:08,searchable:true;抽奖活动等级",
+  "lowestLevel":"string(8),tab:08,searchable:true;用户最低等级",
+  "_t":"longZhu7",
+  "#meta":{
+    "rem":"龙珠7列表",
+    "parent":["platform"],
+    "visitType": [
+      "platform"
+    ],
+    "projectName":"龙珠7列表",
+	"pos": 5,
+	"group": {
+      "id": "prizeData",
+      "name": "奖品管理",
+      "pos": 2
+    },
+    "export":[
+      {
+        "label":"导出完整",
+        "mainTitleFormat":{"background":"#474747","color":"#cccccc"},
+        "subTitleFormat":{"background":"#777777","color":"#ffffff"},
+        "subRecordFormat":{"background":"#ffffff","color":"#000000"},
+        "mainRecordFormat":{"background":"#555555","color":"#FFFFFF"},
+        "key":"completeDoc",
+        "fields":["*"]
+      }
+    ]
+  }
+}
+

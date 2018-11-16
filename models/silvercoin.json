@@ -1,0 +1,29 @@
+{
+  "id":"string(16),tab:01,searchable:true,unique:true,hidden:true;id",
+  "name":"string(6),tab:01,searchable:true;套餐",
+  "point":"number(10),tab:02,searchable:true;银币数量(个)",
+  "price":"number(10),tab:03,isMoney:true,searchable:true;售价(人民币元)",
+  "status":"choice,values:0_草稿/1_待审核/2_上线/3_审核不通过,tab:04,searchable:true;状态",
+  "_t":"silvercoin",
+  "#meta":{
+    "rem":"充值管理",
+    "parent":["platform"],
+    "visitType": [
+      "platform"
+    ],
+	"pos": 7,
+    "projectName":"充值管理",
+    "export":[
+      {
+        "label":"导出完整",
+        "mainTitleFormat":{"background":"#474747","color":"#cccccc"},
+        "subTitleFormat":{"background":"#777777","color":"#ffffff"},
+        "subRecordFormat":{"background":"#ffffff","color":"#000000"},
+        "mainRecordFormat":{"background":"#555555","color":"#FFFFFF"},
+        "key":"completeDoc",
+        "fields":["*"]
+      }
+    ]
+  }
+}
+

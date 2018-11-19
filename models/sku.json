@@ -229,7 +229,7 @@
     "pos": -1,
     "group": {
       "id": "mainData",
-      "name": "主数据",
+      "name": "示例数据",
       "pos": 1
     },
     "export":[

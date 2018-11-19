@@ -1,5 +1,5 @@
 {
-  "honerId":"string(16),tab:01,searchable:true,unique:true,listSize:12,hidden:true;勋章Id",
+  "id":"string(16),tab:01,searchable:true,unique:true,listSize:12,hidden:true;勋章Id",
   "name":"string(16),tab:02,searchable:true,listSize:8;勋章名称",
   "name":"string(75),tab:02,searchable:true,listSize:25;寄语",
   "type":"string(16),tab:03,searchable:true,listSize:8;勋章类型",

@@ -1,5 +1,5 @@
 {
-  "prizeId":"string(16),tab:01,searchable:true,unique:true;奖品Id",
+  "id":"string(16),tab:01,searchable:true,unique:true;奖品Id",
   "prizeName": "string(16),tab:02,searchable:true;奖品名称",
   "prizeTitle":"string(50),tab:03,searchable:true;抽奖活动主题",
   "themeImages":"image,spec:900x560,size:4M,exts:png#jpg#gif#jpeg,tab:04,searchable:false;活动主题图",

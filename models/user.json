@@ -1,5 +1,5 @@
 {
-  "loginId":"string(16),tab:01,searchable:true,unique:true;用户Id",
+  "id":"string(16),tab:01,searchable:true,unique:true;用户Id",
   "wechat_openId": "string(16),tab:02;openId",
   "wechat": "url,tab:03,searchable:true,hidden:true;;微信号",
   "passwordhash":"password,tab:03,searchable:false,hidden:true;密码",

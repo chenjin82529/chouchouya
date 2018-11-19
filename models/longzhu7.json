@@ -1,6 +1,6 @@
 {
   "id":"string(16),tab:01,searchable:true,unique:true;奖品Id",
-  "prizeName": "string(16),tab:02,searchable:true;奖品名称",
+  "prizeName": "string(16),tab:02,searchable:true,defaultValue:龙珠7;奖品名称",
   "encryption": "string(20),tab:03,searchable:false;加密序列号",
   "isEnable":"choice,values:y_是/n_否,tab:04,searchable:true,hidden:false;已投入活动",
   "prizeTitle":"string(50),tab:05,searchable:true;抽奖活动主题",
